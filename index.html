@@ -57,17 +57,17 @@
     opacity: 0.85;
   }
 
-  /* Scroll reveal */
-  .reveal {
+  /* Scroll reveal - only hide elements after JS confirms it's ready */
+  .js-loaded .reveal {
     opacity: 0;
     transform: translateY(32px);
     transition: opacity 0.8s cubic-bezier(0.22,1,0.36,1), transform 0.8s cubic-bezier(0.22,1,0.36,1);
   }
-  .reveal.visible { opacity: 1; transform: translateY(0); }
-  .reveal-delay-1 { transition-delay: 0.1s; }
-  .reveal-delay-2 { transition-delay: 0.2s; }
-  .reveal-delay-3 { transition-delay: 0.3s; }
-  .reveal-delay-4 { transition-delay: 0.4s; }
+  .js-loaded .reveal.visible { opacity: 1; transform: translateY(0); }
+  .js-loaded .reveal-delay-1 { transition-delay: 0.1s; }
+  .js-loaded .reveal-delay-2 { transition-delay: 0.2s; }
+  .js-loaded .reveal-delay-3 { transition-delay: 0.3s; }
+  .js-loaded .reveal-delay-4 { transition-delay: 0.4s; }
 
   /* Hero text animation */
   .hero-line {
@@ -187,7 +187,7 @@
 ═══════════════════════════════════════════ -->
 <section class="relative min-h-screen flex items-center pt-20 overflow-hidden">
   <div class="parallax-bg" id="parallax-hero">
-    <img src="https://images.unsplash.com/photo-1560066984-138dadb4c035?w=1600&auto=format&fit=crop&q=80" alt="Salon interior"/>
+    <img src="https://picsum.photos/seed/salonhero/1600/900" alt="Salon interior"/>
     <div class="absolute inset-0 bg-gradient-to-r from-surface via-surface/65 to-transparent"></div>
   </div>
 
@@ -296,7 +296,7 @@
 
       <!-- Nega Obraza -->
       <div class="service-card group relative overflow-hidden aspect-[3/4] bg-surface-container-low reveal">
-        <img class="w-full h-full object-cover" src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?w=800&auto=format&fit=crop&q=80" alt="Nega obraza"/>
+        <img class="w-full h-full object-cover" src="https://picsum.photos/seed/facial/600/800" alt="Nega obraza"/>
         <div class="card-overlay absolute inset-0"></div>
         <div class="absolute top-5 right-5">
           <div class="price-badge rounded-sm px-3 py-1.5">
@@ -314,7 +314,7 @@
 
       <!-- Manikura -->
       <div class="service-card group relative overflow-hidden aspect-[3/4] bg-surface-container-low lg:mt-12 reveal reveal-delay-1">
-        <img class="w-full h-full object-cover" src="https://images.unsplash.com/photo-1604654894610-df63bc536371?w=800&auto=format&fit=crop&q=80" alt="Manikura"/>
+        <img class="w-full h-full object-cover" src="https://picsum.photos/seed/manicure/600/800" alt="Manikura"/>
         <div class="card-overlay absolute inset-0"></div>
         <div class="absolute top-5 right-5">
           <div class="price-badge rounded-sm px-3 py-1.5">
@@ -332,7 +332,7 @@
 
       <!-- Masaže -->
       <div class="service-card group relative overflow-hidden aspect-[3/4] bg-surface-container-low reveal reveal-delay-2">
-        <img class="w-full h-full object-cover" src="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?w=800&auto=format&fit=crop&q=80" alt="Masaže"/>
+        <img class="w-full h-full object-cover" src="https://picsum.photos/seed/massage/600/800" alt="Masaže"/>
         <div class="card-overlay absolute inset-0"></div>
         <div class="absolute top-5 right-5">
           <div class="price-badge rounded-sm px-3 py-1.5">
@@ -350,7 +350,7 @@
 
       <!-- Depilacija -->
       <div class="service-card group relative overflow-hidden aspect-[3/4] bg-surface-container-low lg:mt-12 reveal reveal-delay-3">
-        <img class="w-full h-full object-cover" src="https://images.unsplash.com/photo-1515377905703-c4788e51af15?w=800&auto=format&fit=crop&q=80" alt="Depilacija"/>
+        <img class="w-full h-full object-cover" src="https://picsum.photos/seed/waxing/600/800" alt="Depilacija"/>
         <div class="card-overlay absolute inset-0"></div>
         <div class="absolute top-5 right-5">
           <div class="price-badge rounded-sm px-3 py-1.5">
@@ -378,7 +378,7 @@
     <div class="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
       <div class="relative reveal">
         <div class="aspect-[4/5] overflow-hidden rounded-sm relative z-10">
-          <img class="w-full h-full object-cover" src="https://images.unsplash.com/photo-1595476108010-b4d1f102b1b1?w=900&auto=format&fit=crop&q=80" alt="Petra Železnik"/>
+          <img class="w-full h-full object-cover" src="https://picsum.photos/seed/portrait/700/900" alt="Petra Železnik"/>
         </div>
         <div class="absolute -top-10 -left-10 w-40 h-40 border border-primary/20 -z-0"></div>
         <div class="absolute -bottom-10 -right-10 bg-primary/10 w-64 h-64 -z-0"></div>
@@ -408,7 +408,7 @@
           </div>
         </div>
         <div class="pt-6">
-          <img class="h-16 opacity-40" src="https://images.unsplash.com/photo-1586769852836-bc069f19e1b6?w=400&auto=format&fit=crop&q=60" alt="Podpis"/>
+          <img class="h-16 opacity-40" src="https://picsum.photos/seed/signature/400/100" alt="Podpis"/>
         </div>
       </div>
     </div>
@@ -537,7 +537,7 @@
 
         <!-- Map placeholder with iframe feel -->
         <div class="w-full aspect-video grayscale hover:grayscale-0 transition-all duration-700 rounded-sm overflow-hidden border border-outline-variant/30">
-          <img class="w-full h-full object-cover" src="https://images.unsplash.com/photo-1524661135-423995f22d0b?w=900&auto=format&fit=crop&q=80" alt="Lokacija Celju"/>
+          <img class="w-full h-full object-cover" src="https://picsum.photos/seed/citymap/900/500" alt="Lokacija Celju"/>
         </div>
       </div>
 
@@ -675,6 +675,7 @@ function onScroll() {
 window.addEventListener('scroll', onScroll, { passive: true });
 
 // ── Scroll reveal ─────────────────────────────────────
+document.body.classList.add('js-loaded');
 const revealEls = document.querySelectorAll('.reveal');
 const observer = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
@@ -683,7 +684,7 @@ const observer = new IntersectionObserver((entries) => {
       observer.unobserve(entry.target);
     }
   });
-}, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+}, { threshold: 0.05, rootMargin: '0px 0px 0px 0px' });
 revealEls.forEach(el => observer.observe(el));
 
 // ── Counter animation ─────────────────────────────────
