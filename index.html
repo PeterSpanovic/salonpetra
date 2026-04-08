@@ -109,12 +109,19 @@
 <a class="hidden md:block bg-primary text-on-primary px-8 py-3 font-label text-sm uppercase tracking-widest hover:bg-stone-800 transition-all duration-300 rounded-sm" href="#kontakt">
                     Rezervacija
                 </a>
-<button class="md:hidden text-primary">
-<span class="material-symbols-outlined">menu</span>
+<button class="md:hidden text-primary" id="mobile-menu-btn" aria-label="Toggle menu" aria-expanded="false">
+<span class="material-symbols-outlined" id="menu-icon">menu</span>
 </button>
 </div>
 </div>
 </nav>
+<!-- Mobile Menu -->
+<div id="mobile-menu" class="hidden fixed top-20 left-0 right-0 z-40 bg-stone-50/95 dark:bg-stone-950/95 backdrop-blur-xl border-b border-stone-200/20 dark:border-stone-800/20 shadow-lg flex-col px-6 py-8 gap-6">
+<a class="mobile-menu-link font-serif text-lg tracking-tight uppercase text-stone-600 dark:text-stone-400 hover:text-amber-700 transition-colors duration-300" href="#storitve">Storitve</a>
+<a class="mobile-menu-link font-serif text-lg tracking-tight uppercase text-stone-600 dark:text-stone-400 hover:text-amber-700 transition-colors duration-300" href="#o-nas">O nas</a>
+<a class="mobile-menu-link font-serif text-lg tracking-tight uppercase text-stone-600 dark:text-stone-400 hover:text-amber-700 transition-colors duration-300" href="#kontakt">Kontakt</a>
+<a class="mobile-menu-link bg-primary text-on-primary px-8 py-4 font-label text-sm uppercase tracking-widest hover:bg-stone-800 transition-all duration-300 rounded-sm text-center" href="#kontakt">Rezervacija</a>
+</div>
 <main>
 <!-- Hero Section -->
 <section class="relative min-h-screen flex items-center pt-20 overflow-hidden">
@@ -391,4 +398,37 @@
 </details>
 </div>
 </footer>
+<script>
+  (function () {
+    var btn = document.getElementById('mobile-menu-btn');
+    var menu = document.getElementById('mobile-menu');
+    var icon = document.getElementById('menu-icon');
+
+    function openMenu() {
+      menu.classList.remove('hidden');
+      menu.classList.add('flex');
+      icon.textContent = 'close';
+      btn.setAttribute('aria-expanded', 'true');
+    }
+
+    function closeMenu() {
+      menu.classList.add('hidden');
+      menu.classList.remove('flex');
+      icon.textContent = 'menu';
+      btn.setAttribute('aria-expanded', 'false');
+    }
+
+    btn.addEventListener('click', function () {
+      if (menu.classList.contains('hidden')) {
+        openMenu();
+      } else {
+        closeMenu();
+      }
+    });
+
+    document.querySelectorAll('.mobile-menu-link').forEach(function (link) {
+      link.addEventListener('click', closeMenu);
+    });
+  })();
+</script>
 </body></html>
