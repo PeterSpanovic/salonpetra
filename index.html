@@ -1,730 +1,325 @@
-<!DOCTYPE html>
-<html class="scroll-smooth" lang="sl">
-<head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Salon Petra | Vaša oaza lepote</title>
-<link href="https://fonts.googleapis.com" rel="preconnect"/>
-<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Manrope:wght@200..800&display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
-<script id="tailwind-config">
-  tailwind.config = {
-    darkMode: "class",
-    theme: {
-      extend: {
-        colors: {
-          "error-container": "#ffdad6","on-error": "#ffffff","on-primary-fixed-variant": "#594316",
-          "surface-container-lowest": "#ffffff","outline-variant": "#d1c4b8","on-secondary": "#ffffff",
-          "surface-bright": "#fff8f1","on-secondary-fixed-variant": "#504531","surface": "#fff8f1",
-          "inverse-primary": "#e2c289","surface-tint": "#735b2b","primary": "#735b2b",
-          "on-surface-variant": "#4e453c","outline": "#80756b","tertiary-fixed-dim": "#c9c6c1",
-          "primary-container": "#bfa16b","on-secondary-container": "#6d614b","error": "#ba1a1a",
-          "secondary-fixed": "#f1e0c5","primary-fixed-dim": "#e2c289","primary-fixed": "#ffdea5",
-          "inverse-surface": "#333029","on-tertiary": "#ffffff","inverse-on-surface": "#f7f0e5",
-          "background": "#fff8f1","tertiary-fixed": "#e6e2dd","on-tertiary-container": "#3c3b38",
-          "on-tertiary-fixed-variant": "#484743","on-background": "#1e1b15","secondary": "#695d47",
-          "on-secondary-fixed": "#231a09","on-primary-container": "#4c380b","on-surface": "#1e1b15",
-          "on-primary-fixed": "#261900","surface-container-low": "#faf2e8","on-tertiary-fixed": "#1c1c19",
-          "surface-container": "#f5ede2","surface-dim": "#e0d9cf","secondary-fixed-dim": "#d4c5aa",
-          "surface-container-high": "#efe7dd","on-error-container": "#93000a","surface-variant": "#e9e1d7",
-          "on-primary": "#ffffff","surface-container-highest": "#e9e1d7","tertiary-container": "#a8a5a0",
-          "tertiary": "#605e5b","secondary-container": "#eedec2"
-        },
-        borderRadius: { "DEFAULT": "0.125rem","lg": "0.25rem","xl": "0.5rem","full": "0.75rem" },
-        fontFamily: { "headline": ["Noto Serif"],"body": ["Manrope"],"label": ["Manrope"] }
-      },
-    },
-  }
-</script>
+<!DOCTYPE html><html class="scroll-smooth" lang="sl"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Salon Petra | Vaša oaza lepote in sprostitve</title>
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400&amp;family=Work+Sans:wght@300;400;500&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "inverse-on-surface": "#f2f1ee",
+                    "surface-container-lowest": "#ffffff",
+                    "tertiary-container": "#ffe2d1",
+                    "secondary-fixed": "#f4dfcd",
+                    "outline-variant": "#cfc5bc",
+                    "background": "#faf9f6",
+                    "inverse-primary": "#e9c176",
+                    "primary-fixed": "#ffdea5",
+                    "on-primary": "#ffffff",
+                    "surface": "#faf9f6",
+                    "on-tertiary": "#ffffff",
+                    "surface-bright": "#faf9f6",
+                    "surface-variant": "#e3e2e0",
+                    "secondary-fixed-dim": "#d7c3b2",
+                    "on-primary-fixed": "#261900",
+                    "on-error-container": "#93000a",
+                    "on-secondary": "#ffffff",
+                    "on-secondary-container": "#6f6052",
+                    "on-secondary-fixed": "#24190f",
+                    "inverse-surface": "#2f312f",
+                    "on-primary-container": "#816222",
+                    "primary-fixed-dim": "#e9c176",
+                    "secondary-container": "#f1dcca",
+                    "error-container": "#ffdad6",
+                    "tertiary-fixed": "#fbddca",
+                    "on-tertiary-fixed": "#28180d",
+                    "primary-container": "#ffe4b6",
+                    "tertiary-fixed-dim": "#dec1af",
+                    "on-tertiary-container": "#7a6354",
+                    "on-tertiary-fixed-variant": "#574335",
+                    "surface-container-highest": "#e3e2e0",
+                    "secondary": "#6b5c4e",
+                    "tertiary": "#705a4c",
+                    "on-error": "#ffffff",
+                    "on-background": "#1a1c1a",
+                    "surface-tint": "#775a19",
+                    "error": "#ba1a1a",
+                    "surface-container": "#efeeeb",
+                    "surface-dim": "#dbdad7",
+                    "primary": "#775a19",
+                    "on-primary-fixed-variant": "#5d4201",
+                    "outline": "#7e766e",
+                    "on-secondary-fixed-variant": "#524437",
+                    "surface-container-high": "#e9e8e5",
+                    "surface-container-low": "#f4f3f1",
+                    "on-surface-variant": "#4c463f",
+                    "on-surface": "#1a1c1a"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "fontFamily": {
+                    "headline": ["Noto Serif"],
+                    "body": ["Work Sans"],
+                    "label": ["Work Sans"]
+            }
+          },
+        },
+      }
+    </script>
 <style>
-  .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 200, 'GRAD' 0, 'opsz' 24; }
-  .serif-masthead { letter-spacing: -0.02em; }
-  .category-tag { letter-spacing: 0.1em; }
-  .glass-nav { backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); }
-  .no-scrollbar::-webkit-scrollbar { display: none; }
-  .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
-
-  /* Parallax hero */
-  .parallax-bg {
-    position: absolute; inset: 0; z-index: 0;
-    transform: translateY(0);
-    will-change: transform;
-  }
-  .parallax-bg img {
-    width: 100%; height: 120%; object-fit: cover;
-    opacity: 0.85;
-  }
-
-  /* Scroll reveal - only hide elements after JS confirms it's ready */
-  .js-loaded .reveal {
-    opacity: 0;
-    transform: translateY(32px);
-    transition: opacity 0.8s cubic-bezier(0.22,1,0.36,1), transform 0.8s cubic-bezier(0.22,1,0.36,1);
-  }
-  .js-loaded .reveal.visible { opacity: 1; transform: translateY(0); }
-  .js-loaded .reveal-delay-1 { transition-delay: 0.1s; }
-  .js-loaded .reveal-delay-2 { transition-delay: 0.2s; }
-  .js-loaded .reveal-delay-3 { transition-delay: 0.3s; }
-  .js-loaded .reveal-delay-4 { transition-delay: 0.4s; }
-
-  /* Hero text animation */
-  .hero-line {
-    opacity: 0;
-    transform: translateY(40px);
-    animation: heroIn 1s cubic-bezier(0.22,1,0.36,1) forwards;
-  }
-  .hero-line:nth-child(1) { animation-delay: 0.2s; }
-  .hero-line:nth-child(2) { animation-delay: 0.45s; }
-  .hero-line:nth-child(3) { animation-delay: 0.65s; }
-  .hero-line:nth-child(4) { animation-delay: 0.85s; }
-  @keyframes heroIn {
-    to { opacity: 1; transform: translateY(0); }
-  }
-
-  /* Service card */
-  .service-card { transition: transform 0.5s cubic-bezier(0.22,1,0.36,1), box-shadow 0.5s ease; }
-  .service-card:hover { transform: translateY(-8px); box-shadow: 0 24px 48px rgba(115,91,43,0.15); }
-  .service-card .card-overlay {
-    background: linear-gradient(to top, rgba(30,27,21,0.9) 0%, rgba(30,27,21,0.4) 50%, transparent 100%);
-    transition: opacity 0.4s ease;
-  }
-  .service-card .card-btn {
-    opacity: 0; transform: translateY(12px);
-    transition: opacity 0.35s ease, transform 0.35s ease;
-  }
-  .service-card:hover .card-btn { opacity: 1; transform: translateY(0); }
-  .service-card img { transition: transform 0.8s cubic-bezier(0.22,1,0.36,1); }
-  .service-card:hover img { transform: scale(1.08); }
-
-  /* Counter */
-  .counter-num { font-variant-numeric: tabular-nums; }
-
-  /* Stats bar */
-  .stat-bar { border-right: 1px solid rgba(115,91,43,0.2); }
-  .stat-bar:last-child { border-right: none; }
-
-  /* WhatsApp button */
-  .whatsapp-btn {
-    background: #25D366;
-    box-shadow: 0 8px 32px rgba(37,211,102,0.4);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
-  .whatsapp-btn:hover { transform: scale(1.08); box-shadow: 0 12px 40px rgba(37,211,102,0.5); }
-
-  /* Nav scroll effect */
-  nav.scrolled { box-shadow: 0 2px 20px rgba(30,27,21,0.08); }
-
-  /* Testimonial card */
-  .testimonial-card {
-    transition: transform 0.3s ease;
-    border-left: 3px solid #735b2b;
-  }
-  .testimonial-card:hover { transform: translateY(-4px); }
-
-  /* Price tag badge */
-  .price-badge {
-    background: rgba(255,248,241,0.95);
-    backdrop-filter: blur(8px);
-    border: 1px solid rgba(115,91,43,0.3);
-  }
-
-  /* Form focus */
-  input:focus, textarea:focus, select:focus {
-    outline: none;
-    border-color: #735b2b !important;
-  }
-
-  /* Marquee */
-  .marquee-track {
-    display: flex;
-    width: max-content;
-    animation: marquee 30s linear infinite;
-  }
-  @keyframes marquee {
-    0% { transform: translateX(0); }
-    100% { transform: translateX(-50%); }
-  }
-  .marquee-wrap { overflow: hidden; }
-
-  /* Form submit state */
-  .form-success { display: none; }
-</style>
+        body { font-family: 'Work Sans', sans-serif; background-color: #faf9f6; color: #1a1c1a; }
+        h1, h2, h3, .serif { font-family: 'Noto Serif', serif; }
+        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 200, 'GRAD' 0, 'opsz' 24; }
+        .editorial-shadow { box-shadow: 0 40px 40px -10px rgba(26, 28, 26, 0.04); }
+        .letter-spacing-widest { letter-spacing: 0.15em; }
+        .parallax-bg { background-attachment: fixed; background-position: center; background-size: cover; }
+    </style>
 </head>
-<body class="bg-surface text-on-background font-body selection:bg-primary-container selection:text-on-primary-container overflow-x-hidden">
-
+<body class="bg-surface text-on-surface selection:bg-primary-container selection:text-on-primary-container">
 <!-- TopNavBar -->
-<nav id="main-nav" class="fixed top-0 w-full z-50 bg-stone-50/80 dark:bg-stone-950/80 glass-nav border-b border-stone-200/20 transition-all duration-300">
-  <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
-    <a class="font-serif text-2xl font-bold tracking-tighter text-amber-900 uppercase" href="#">Salon Petra</a>
-    <div class="hidden md:flex items-center space-x-12">
-      <a class="font-serif text-lg tracking-tight uppercase text-stone-600 hover:text-amber-700 transition-colors duration-300" href="#storitve">Storitve</a>
-      <a class="font-serif text-lg tracking-tight uppercase text-stone-600 hover:text-amber-700 transition-colors duration-300" href="#o-nas">O nas</a>
-      <a class="font-serif text-lg tracking-tight uppercase text-stone-600 hover:text-amber-700 transition-colors duration-300" href="#kontakt">Kontakt</a>
-    </div>
-    <div class="flex items-center gap-6">
-      <a class="hidden md:block bg-primary text-on-primary px-8 py-3 font-label text-sm uppercase tracking-widest hover:bg-stone-800 transition-all duration-300 rounded-sm" href="#kontakt">
-        Rezervacija
-      </a>
-      <button class="md:hidden text-primary" id="mobile-toggle">
-        <span class="material-symbols-outlined">menu</span>
-      </button>
-    </div>
-  </div>
-  <!-- Mobile menu -->
-  <div id="mobile-menu" class="hidden md:hidden bg-stone-50 border-t border-stone-200/30 px-6 py-6 space-y-4">
-    <a class="block font-serif text-lg uppercase text-stone-600 hover:text-amber-700 py-2" href="#storitve" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Storitve</a>
-    <a class="block font-serif text-lg uppercase text-stone-600 hover:text-amber-700 py-2" href="#o-nas" onclick="document.getElementById('mobile-menu').classList.add('hidden')">O nas</a>
-    <a class="block font-serif text-lg uppercase text-stone-600 hover:text-amber-700 py-2" href="#kontakt" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Kontakt</a>
-    <a class="block bg-primary text-on-primary px-8 py-3 font-label text-sm uppercase tracking-widest text-center mt-4" href="#kontakt" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Rezervacija</a>
-  </div>
-</nav>
-
-<main>
-<!-- ═══════════════════════════════════════════
-     HERO SECTION — Parallax
-═══════════════════════════════════════════ -->
-<section class="relative min-h-screen flex items-center pt-20 overflow-hidden">
-  <div class="parallax-bg" id="parallax-hero">
-    <img src="https://picsum.photos/seed/salonhero/1600/900" alt="Salon interior"/>
-    <div class="absolute inset-0 bg-gradient-to-r from-surface via-surface/65 to-transparent"></div>
-  </div>
-
-  <div class="relative z-10 max-w-7xl mx-auto px-6 w-full py-20">
-    <div class="max-w-2xl">
-      <span class="hero-line category-tag text-primary font-label text-sm font-bold uppercase mb-4 block">Ekskluzivno v Celju</span>
-      <h1 class="hero-line text-6xl md:text-8xl font-headline serif-masthead text-on-background mb-8 leading-[1.1]">
-        Vaša oaza <br/><span class="italic text-primary">lepote</span> in sprostitve.
-      </h1>
-      <p class="hero-line text-xl text-on-surface-variant font-light mb-10 max-w-md">
-        Vrhunska nega v srcu vašega mesta. Doživite trenutek popolnega miru in vrhunskih kozmetičnih storitev.
-      </p>
-      <div class="hero-line flex flex-col sm:flex-row gap-4">
-        <a class="bg-primary text-on-primary px-10 py-5 rounded-sm font-label uppercase tracking-widest text-sm text-center transition-all hover:translate-y-[-2px] hover:shadow-xl shadow-primary/20" href="#kontakt">
-          Rezerviraj termin
-        </a>
-        <a class="border-b border-primary text-primary px-4 py-5 font-label uppercase tracking-widest text-sm text-center hover:bg-primary/5 transition-colors" href="#storitve">
-          Odkrij storitve
-        </a>
-      </div>
-    </div>
-  </div>
-
-  <!-- Scroll indicator -->
-  <div class="absolute bottom-10 left-1/2 -translate-x-1/2 z-10 flex flex-col items-center gap-2 opacity-60">
-    <span class="font-label text-[10px] uppercase tracking-widest text-on-surface-variant">Drsni navzdol</span>
-    <div class="w-px h-12 bg-primary/40 animate-pulse"></div>
-  </div>
-</section>
-
-<!-- ═══════════════════════════════════════════
-     STATS / COUNTER SECTION
-═══════════════════════════════════════════ -->
-<section class="py-20 bg-primary" id="stats">
-  <div class="max-w-7xl mx-auto px-6">
-    <div class="grid grid-cols-2 md:grid-cols-4 gap-0">
-      <div class="stat-bar text-center py-8 px-6 reveal">
-        <div class="text-5xl md:text-6xl font-headline text-on-primary counter-num mb-2" data-target="12" data-suffix="+">0+</div>
-        <div class="font-label text-xs uppercase tracking-widest text-on-primary/70">Let izkušenj</div>
-      </div>
-      <div class="stat-bar text-center py-8 px-6 reveal reveal-delay-1">
-        <div class="text-5xl md:text-6xl font-headline text-on-primary counter-num mb-2" data-target="850" data-suffix="+">0+</div>
-        <div class="font-label text-xs uppercase tracking-widest text-on-primary/70">Zadovoljnih strank</div>
-      </div>
-      <div class="stat-bar text-center py-8 px-6 reveal reveal-delay-2">
-        <div class="text-5xl md:text-6xl font-headline text-on-primary counter-num mb-2" data-target="4" data-suffix="">0</div>
-        <div class="font-label text-xs uppercase tracking-widest text-on-primary/70">Vrste storitev</div>
-      </div>
-      <div class="text-center py-8 px-6 reveal reveal-delay-3">
-        <div class="text-5xl md:text-6xl font-headline text-on-primary counter-num mb-2" data-target="100" data-suffix="%">0%</div>
-        <div class="font-label text-xs uppercase tracking-widest text-on-primary/70">Zadovoljstvo strank</div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ═══════════════════════════════════════════
-     MARQUEE BAND
-═══════════════════════════════════════════ -->
-<div class="py-4 bg-surface-container overflow-hidden border-y border-outline-variant/30">
-  <div class="marquee-wrap">
-    <div class="marquee-track">
-      <span class="font-headline italic text-primary/40 text-2xl mx-12">Nega obraza</span>
-      <span class="text-primary/20 text-2xl mx-4">·</span>
-      <span class="font-headline italic text-primary/40 text-2xl mx-12">Masaže</span>
-      <span class="text-primary/20 text-2xl mx-4">·</span>
-      <span class="font-headline italic text-primary/40 text-2xl mx-12">Manikura</span>
-      <span class="text-primary/20 text-2xl mx-4">·</span>
-      <span class="font-headline italic text-primary/40 text-2xl mx-12">Depilacija</span>
-      <span class="text-primary/20 text-2xl mx-4">·</span>
-      <span class="font-headline italic text-primary/40 text-2xl mx-12">Vrhunska nega</span>
-      <span class="text-primary/20 text-2xl mx-4">·</span>
-      <span class="font-headline italic text-primary/40 text-2xl mx-12">Sprostitev</span>
-      <span class="text-primary/20 text-2xl mx-4">·</span>
-      <!-- duplicate for seamless loop -->
-      <span class="font-headline italic text-primary/40 text-2xl mx-12">Nega obraza</span>
-      <span class="text-primary/20 text-2xl mx-4">·</span>
-      <span class="font-headline italic text-primary/40 text-2xl mx-12">Masaže</span>
-      <span class="text-primary/20 text-2xl mx-4">·</span>
-      <span class="font-headline italic text-primary/40 text-2xl mx-12">Manikura</span>
-      <span class="text-primary/20 text-2xl mx-4">·</span>
-      <span class="font-headline italic text-primary/40 text-2xl mx-12">Depilacija</span>
-      <span class="text-primary/20 text-2xl mx-4">·</span>
-      <span class="font-headline italic text-primary/40 text-2xl mx-12">Vrhunska nega</span>
-      <span class="text-primary/20 text-2xl mx-4">·</span>
-      <span class="font-headline italic text-primary/40 text-2xl mx-12">Sprostitev</span>
-      <span class="text-primary/20 text-2xl mx-4">·</span>
-    </div>
-  </div>
+<nav class="fixed top-0 w-full z-50 bg-stone-50/80 dark:bg-stone-900/80 backdrop-blur-md">
+<div class="flex justify-between items-center px-6 md:px-12 py-6 max-w-screen-2xl mx-auto">
+<a class="font-serif italic text-2xl tracking-widest text-stone-900 dark:text-stone-50" href="#" style="">Salon Petra</a>
+<div class="hidden md:flex items-center gap-10">
+<a class="text-stone-600 dark:text-stone-400 font-sans tracking-widest text-xs uppercase hover:text-amber-700 transition-colors duration-300" href="#storitve" style="">Storitve</a>
+<a class="text-stone-600 dark:text-stone-400 font-sans tracking-widest text-xs uppercase hover:text-amber-700 transition-colors duration-300" href="#o-nas" style="">O nas</a>
+<a class="text-stone-600 dark:text-stone-400 font-sans tracking-widest text-xs uppercase hover:text-amber-700 transition-colors duration-300" href="#kontakt" style="">Kontakt</a>
 </div>
-
-<!-- ═══════════════════════════════════════════
-     STORITVE SECTION — Enhanced cards
-═══════════════════════════════════════════ -->
-<section class="py-32 bg-surface" id="storitve">
-  <div class="max-w-7xl mx-auto px-6">
-    <div class="flex flex-col md:flex-row justify-between items-end mb-20 gap-8">
-      <div class="max-w-xl reveal">
-        <span class="category-tag text-primary font-label text-sm font-bold uppercase mb-4 block">Naša ponudba</span>
-        <h2 class="text-4xl md:text-5xl font-headline text-on-surface">Izbrane storitve za vašo popolnost</h2>
-      </div>
-      <p class="text-on-surface-variant max-w-sm mb-2 reveal reveal-delay-2">Vsak tretma je prilagojen vašim unikatnim potrebam in željam po sprostitvi.</p>
-    </div>
-
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-
-      <!-- Nega Obraza -->
-      <div class="service-card group relative overflow-hidden aspect-[3/4] bg-surface-container-low reveal">
-        <img class="w-full h-full object-cover" src="https://picsum.photos/seed/facial/600/800" alt="Nega obraza"/>
-        <div class="card-overlay absolute inset-0"></div>
-        <div class="absolute top-5 right-5">
-          <div class="price-badge rounded-sm px-3 py-1.5">
-            <span class="font-label text-xs font-bold text-primary uppercase tracking-wider">od 35 €</span>
-          </div>
-        </div>
-        <div class="absolute bottom-0 p-8 w-full">
-          <h3 class="text-2xl font-headline text-surface mb-2">Nega obraza</h3>
-          <p class="text-surface/80 text-sm mb-4">Personalizirani tretmaji za sijočo in zdravo kožo.</p>
-          <a class="card-btn inline-block border border-surface/40 text-surface px-5 py-2.5 font-label text-xs uppercase tracking-widest hover:bg-surface/10 transition-colors rounded-sm" href="#kontakt">
-            Rezerviraj →
-          </a>
-        </div>
-      </div>
-
-      <!-- Manikura -->
-      <div class="service-card group relative overflow-hidden aspect-[3/4] bg-surface-container-low lg:mt-12 reveal reveal-delay-1">
-        <img class="w-full h-full object-cover" src="https://picsum.photos/seed/manicure/600/800" alt="Manikura"/>
-        <div class="card-overlay absolute inset-0"></div>
-        <div class="absolute top-5 right-5">
-          <div class="price-badge rounded-sm px-3 py-1.5">
-            <span class="font-label text-xs font-bold text-primary uppercase tracking-wider">od 20 €</span>
-          </div>
-        </div>
-        <div class="absolute bottom-0 p-8 w-full">
-          <h3 class="text-2xl font-headline text-surface mb-2">Manikura</h3>
-          <p class="text-surface/80 text-sm mb-4">Popolno oblikovani nohti in sproščujoča nega rok.</p>
-          <a class="card-btn inline-block border border-surface/40 text-surface px-5 py-2.5 font-label text-xs uppercase tracking-widest hover:bg-surface/10 transition-colors rounded-sm" href="#kontakt">
-            Rezerviraj →
-          </a>
-        </div>
-      </div>
-
-      <!-- Masaže -->
-      <div class="service-card group relative overflow-hidden aspect-[3/4] bg-surface-container-low reveal reveal-delay-2">
-        <img class="w-full h-full object-cover" src="https://picsum.photos/seed/massage/600/800" alt="Masaže"/>
-        <div class="card-overlay absolute inset-0"></div>
-        <div class="absolute top-5 right-5">
-          <div class="price-badge rounded-sm px-3 py-1.5">
-            <span class="font-label text-xs font-bold text-primary uppercase tracking-wider">od 45 €</span>
-          </div>
-        </div>
-        <div class="absolute bottom-0 p-8 w-full">
-          <h3 class="text-2xl font-headline text-surface mb-2">Masaže</h3>
-          <p class="text-surface/80 text-sm mb-4">Terapevtska sprostitev telesa in duha pod strokovnimi rokami.</p>
-          <a class="card-btn inline-block border border-surface/40 text-surface px-5 py-2.5 font-label text-xs uppercase tracking-widest hover:bg-surface/10 transition-colors rounded-sm" href="#kontakt">
-            Rezerviraj →
-          </a>
-        </div>
-      </div>
-
-      <!-- Depilacija -->
-      <div class="service-card group relative overflow-hidden aspect-[3/4] bg-surface-container-low lg:mt-12 reveal reveal-delay-3">
-        <img class="w-full h-full object-cover" src="https://picsum.photos/seed/waxing/600/800" alt="Depilacija"/>
-        <div class="card-overlay absolute inset-0"></div>
-        <div class="absolute top-5 right-5">
-          <div class="price-badge rounded-sm px-3 py-1.5">
-            <span class="font-label text-xs font-bold text-primary uppercase tracking-wider">od 15 €</span>
-          </div>
-        </div>
-        <div class="absolute bottom-0 p-8 w-full">
-          <h3 class="text-2xl font-headline text-surface mb-2">Depilacija</h3>
-          <p class="text-surface/80 text-sm mb-4">Dolgotrajna gladkost in nežna nega za vse tipe kože.</p>
-          <a class="card-btn inline-block border border-surface/40 text-surface px-5 py-2.5 font-label text-xs uppercase tracking-widest hover:bg-surface/10 transition-colors rounded-sm" href="#kontakt">
-            Rezerviraj →
-          </a>
-        </div>
-      </div>
-
-    </div>
-  </div>
+<div class="flex items-center gap-6">
+<button class="bg-primary text-on-primary px-6 py-2.5 text-xs tracking-widest uppercase font-medium hover:bg-primary-fixed-dim transition-all duration-300 scale-95 hover:scale-100" style="">
+                    Rezervacija
+                </button>
+<button class="md:hidden text-on-surface" style="">
+<span class="material-symbols-outlined" style="">menu</span>
+</button>
+</div>
+</div>
+</nav>
+<!-- Hero Section -->
+<header class="relative h-screen w-full flex items-center justify-center overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img alt="Luxury Spa Atmosphere" class="w-full h-full object-cover" data-alt="Ultra-luxurious minimalist spa interior with soft natural light hitting warm stone surfaces and delicate dried flowers in a glass vase" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCAaVp83OGdkXgSbZ65aW6tVlng8OVJiR_1PT5RxsHeUSf2btR9y-MFIjqyxczuERJANEDlDWtOZ1Mj1R_z_X6CEMtRZPJ3edtZlKf3DWE2rWfB71efCsT3lUl-IT9959-0byqfqYOHP9bx6U7FoIkRIri5z4YMsL1ITAmjpRJYunJzKkd7lNgMiGBOAvW99ohIrX6ut6-CJg7R-det38IEfrvLfCJwvSyDEMd_9vmPfXBtEgvZOli9CU1RZitOUy_JyuTP80hLuzv4" style="">
+<div class="absolute inset-0 bg-stone-900/20 backdrop-brightness-95"></div>
+</div>
+<div class="relative z-10 text-center px-6 max-w-4xl">
+<span class="block text-primary uppercase tracking-[0.3em] text-xs mb-6 font-medium animate-pulse" style="">Celje, Slovenija</span>
+<h1 class="text-5xl md:text-8xl text-white mb-8 leading-tight tracking-tight" style="">Vaša oaza lepote <br><span class="italic font-light" style="">in sprostitve.</span></h1>
+<p class="text-stone-100 text-lg md:text-xl font-light mb-12 max-w-2xl mx-auto tracking-wide leading-relaxed" style="">Vrhunska nega v srcu Celja, kjer se čas ustavi in narava sreča prestiž.</p>
+<div class="flex flex-col sm:flex-row items-center justify-center gap-6">
+<a class="bg-white text-stone-900 px-10 py-4 tracking-widest uppercase text-xs font-semibold hover:bg-primary-container transition-all duration-500" href="#storitve" style="">
+                    Rezerviraj termin
+                </a>
+<a class="text-white border-b border-white/40 pb-1 tracking-widest uppercase text-[10px] font-medium hover:border-white transition-all duration-300" href="#o-nas" style="">
+                    Spoznajte nas
+                </a>
+</div>
+</div>
+<div class="absolute bottom-12 left-1/2 -translate-x-1/2 text-white/50">
+<span class="material-symbols-outlined animate-bounce" style="">expand_more</span>
+</div>
+</header>
+<!-- Storitve (Services) -->
+<section class="py-32 px-6 md:px-12 bg-surface" id="storitve">
+<div class="max-w-screen-2xl mx-auto">
+<div class="flex flex-col md:flex-row justify-between items-end mb-24 gap-8">
+<div class="max-w-xl">
+<h2 class="text-4xl md:text-6xl text-on-surface mb-6 leading-none" style="">Umetnost <span class="italic" style="">negovanja.</span></h2>
+<p class="text-secondary tracking-wide leading-relaxed" style="">Vsaka storitev je prilagojena vašim edinstvenim potrebam. Uporabljamo le najprestižnejše izdelke za dolgotrajne rezultate.</p>
+</div>
+<div class="hidden md:block">
+<span class="text-[100px] font-serif italic text-surface-container leading-none select-none" style="">Services</span>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-6">
+<!-- Nega Obraza -->
+<div class="md:col-span-8 group relative overflow-hidden h-[500px]">
+<img class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105" data-alt="Close-up of a professional facial treatment with high-end serums and soft lighting on smooth skin" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCHupF4W5n1ee3kJJyvCjV3mMaPydJnpcRge-qKumJ-U9pMBL_8gMjI_m7Oxe0wnhzTu4ASrCoWlfbHcnnR5XCM-lpxl1DbVtabuJ-udikVmR3V2B5cPupNhGcD3fOx13dAxy3NG2xgCkeamVE_L2ovGdO-fzq7UBCDdnGe9quTUjiIG3qUedAheF5-14jzxV3uf9X9KW_CW2ndrP0rWHDPlAnBh_V7Td2guXwpW0h0PHkkIbrAhyQVjFM24H4YzC8e9DprL6-Rjs9Q" style="">
+<div class="absolute inset-0 bg-stone-900/30 group-hover:bg-stone-900/10 transition-colors duration-500"></div>
+<div class="absolute bottom-10 left-10 text-white">
+<span class="block uppercase tracking-[0.2em] text-[10px] mb-2 opacity-80" style="">Ekskluzivno</span>
+<h3 class="text-3xl mb-4" style="">Nega obraza</h3>
+<p class="max-w-md text-sm font-light opacity-0 group-hover:opacity-100 transform translate-y-4 group-hover:translate-y-0 transition-all duration-500" style="">Individualno prilagojene terapije za sijočo in pomlajeno kožo z uporabo prestižne kozmetike.</p>
+</div>
+</div>
+<!-- Manikura -->
+<div class="md:col-span-4 group relative overflow-hidden h-[500px]">
+<img class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105" data-alt="Elegant manicure with soft nude polish on well-manicured hands resting on white linen" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA3gByn3cJCHlXV-zxu3-8DEqoyPNBZGev_mA9QXgXXxAI2dywyjdjzfd5SMARTcPhsVk4Z6avokCaOZ5mHU8eJacZVnRCNpJqGs5JYV76wFHKWW9hs4zqprMYWIoWpDsba_PFc4iJwZq3r6mVSk2MF08paK9rH1sXX6UVuS4MCCTx1wuhil--WHK-WjfvL_yTzlf6iczEJB_w7Ag3eQqpNnqd3uuK5IDyWVQop2uqqXJ1mpRRUQq-chyAVKeVCB6D7JixFz-0eD84j" style="">
+<div class="absolute inset-0 bg-stone-900/30"></div>
+<div class="absolute bottom-10 left-10 text-white">
+<h3 class="text-3xl mb-2" style="">Manikura</h3>
+<span class="material-symbols-outlined text-4xl font-extralight" style="">flare</span>
+</div>
+</div>
+<!-- Masaže -->
+<div class="md:col-span-4 group relative overflow-hidden h-[500px]">
+<img class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105" data-alt="Atmospheric massage room with warm lighting, smooth massage stones, and aromatic oils on a wooden tray" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBHRU_TQfURWFpLbL-Q_H2CsXF-nIDQ097PXscp8pQN9XULK2E9plsGsZjm2DJ8HETwgVI9WRoYn5wD-YwKg33nPfp6N5odv8TT-cfzCuilgtnxcQdd48tIOzByYwVDNz9ESgKLeQ04XhWQTCJTOcIT7JQEkkaUzlAp6yBRABASqtAw3nB-WmBkpYQ9DE1t4jvmVH2vDA1pkVBJTWcrvVwYTWFWLlC0o5rT49mzEKYXMkYXyWbZ5ggh4iuRqEimAvBZ4Ou-Mfd30GcN" style="">
+<div class="absolute inset-0 bg-stone-900/30"></div>
+<div class="absolute bottom-10 left-10 text-white">
+<h3 class="text-3xl mb-2" style="">Masaže</h3>
+<p class="text-xs tracking-widest uppercase opacity-70" style="">Popolna sprostitev duha</p>
+</div>
+</div>
+<!-- Depilacija -->
+<div class="md:col-span-8 group relative overflow-hidden h-[500px]">
+<img class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105" data-alt="Minimalist clinical setting for professional hair removal services, clean and bright aesthetics" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDhz9wJk_Jt2BhpxZdTYwXWNBNMRXjhXRpDeOQlnae5mUlQ1AiBhjgJHPsMcJ5dS_5c643IA0_Ik1wvi47saSXG0Ism5-PIcVtpQV24EF3EgxYlI_v8BQuqy2cI3V3ryy7SVdKOPbfZG3eohhxmci1sMwc-3e2AebbY9dRo4wFxmEJ6pNCwRsPEyRe7Q3CF8pCQ99WD_SvhPgZCXaZzshfo8h-1hTEyZ3WFwnjxrd9Sjl6dzly9G-wb7If_W_B0r0kQwuPwIi_2JR4l" style="">
+<div class="absolute inset-0 bg-stone-900/30"></div>
+<div class="absolute bottom-10 left-10 text-white">
+<h3 class="text-3xl mb-4" style="">Depilacija</h3>
+<button class="border border-white/30 px-6 py-2 text-[10px] tracking-[0.2em] uppercase hover:bg-white hover:text-stone-900 transition-colors duration-300" style="">Več o storitvi</button>
+</div>
+</div>
+</div>
+</div>
 </section>
-
-<!-- ═══════════════════════════════════════════
-     O NAS SECTION
-═══════════════════════════════════════════ -->
+<!-- O nas (About) -->
 <section class="py-32 bg-surface-container-low overflow-hidden" id="o-nas">
-  <div class="max-w-7xl mx-auto px-6">
-    <div class="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
-      <div class="relative reveal">
-        <div class="aspect-[4/5] overflow-hidden rounded-sm relative z-10">
-          <img class="w-full h-full object-cover" src="https://picsum.photos/seed/portrait/700/900" alt="Petra Železnik"/>
-        </div>
-        <div class="absolute -top-10 -left-10 w-40 h-40 border border-primary/20 -z-0"></div>
-        <div class="absolute -bottom-10 -right-10 bg-primary/10 w-64 h-64 -z-0"></div>
-        <!-- floating badge -->
-        <div class="absolute -bottom-6 left-10 bg-surface-container-lowest shadow-lg px-8 py-5 border border-outline-variant/30 z-20">
-          <div class="font-headline text-3xl text-primary font-bold">12+</div>
-          <div class="font-label text-xs uppercase tracking-widest text-on-surface-variant mt-1">Let izkušenj</div>
-        </div>
-      </div>
-
-      <div class="space-y-8 reveal reveal-delay-2">
-        <span class="category-tag text-primary font-label text-sm font-bold uppercase block">Zgodba Salona</span>
-        <h2 class="text-5xl font-headline text-on-surface leading-tight">Petra Železnik s.p. <br/><span class="italic font-light">Vaša zaveznica lepote</span></h2>
-        <div class="space-y-6 text-on-surface-variant text-lg leading-relaxed font-light">
-          <p>V Salonu Petra verjamemo, da lepota izvira iz notranjega miru. Moja pot v svetu kozmetike se je začela s strastjo do estetike in željo, da bi vsaki stranki omogočila trenutek, ko se čas ustavi.</p>
-          <p>Z dolgoletnimi izkušnjami in nenehnim izobraževanjem v Celju ustvarjam prostor, kjer se vrhunska tehnologija sreča s toplino osebnega pristopa.</p>
-        </div>
-        <!-- Certificates strip -->
-        <div class="flex flex-wrap gap-4 pt-4">
-          <div class="flex items-center gap-2 bg-primary/8 px-4 py-2 rounded-sm">
-            <span class="material-symbols-outlined text-primary text-sm" style="font-variation-settings:'FILL' 1;">verified</span>
-            <span class="font-label text-xs uppercase tracking-wider text-primary font-bold">Certificirana strokovnjakinja</span>
-          </div>
-          <div class="flex items-center gap-2 bg-primary/8 px-4 py-2 rounded-sm">
-            <span class="material-symbols-outlined text-primary text-sm" style="font-variation-settings:'FILL' 1;">spa</span>
-            <span class="font-label text-xs uppercase tracking-wider text-primary font-bold">Premium produkti</span>
-          </div>
-        </div>
-        <div class="pt-6">
-          <img class="h-16 opacity-40" src="https://picsum.photos/seed/signature/400/100" alt="Podpis"/>
-        </div>
-      </div>
-    </div>
-  </div>
+<div class="max-w-screen-2xl mx-auto px-6 md:px-12">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
+<div class="relative">
+<div class="aspect-[4/5] overflow-hidden">
+<img alt="Petra Železnik" class="w-full h-full object-cover" data-alt="Professional portrait of a sophisticated woman in elegant attire, smiling warmly in a bright, modern studio setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDbRFn4btDWPS6BLxHT6rzqnHixWdAtar2Hg8p6iGj21xY4_F7QkCIeHPjXNGfuoLh8AJsTsULRuWsG2qhOLpbapHNTJ1IerKgMbC7WDBdvUxMrym3a6d0uYwVEMQdy0Yg81nYDX8-PvjaxzrB8ZBjoyJsnELcnC43H9V0udwlmbbmHfYj3PhhoODYdu0_L4KdP-Wu3FH7weQp5FQCFDqL_6ZI-L6Ewncw9zLWek-zE1rPXxtCsiAbwxXOjrmI4TbpOvCgyUk9rr2KD" style="">
+</div>
+<div class="absolute -bottom-10 -right-10 bg-white p-12 hidden md:block editorial-shadow">
+<p class="font-serif italic text-2xl text-primary mb-2" style="">"Lepota je v harmoniji."</p>
+<p class="text-xs tracking-widest uppercase text-secondary" style="">— Petra Železnik</p>
+</div>
+</div>
+<div class="space-y-8">
+<span class="text-primary tracking-[0.3em] text-[10px] uppercase font-semibold" style="">Zgodba Salona Petra</span>
+<h2 class="text-4xl md:text-6xl text-on-surface leading-tight" style="">Vrhunska nega z <span class="italic" style="">osebnim dotikom.</span></h2>
+<p class="text-on-surface-variant leading-loose text-lg font-light" style="">Kot 'The Ethereal Curator' vašega dobrega počutja, Petra Železnik v Celje prinaša vizijo lepote, ki presega le videz. V Salonu Petra verjamemo, da je vsak obisk priložnost za celostno regeneracijo.</p>
+<p class="text-on-surface-variant leading-loose" style="">Z večletnimi izkušnjami in nenehnim izobraževanjem na področju naprednih kozmetičnih tehnik smo ustvarili prostor, kjer se sodobna tehnologija prepleta s toplino in pozornostjo do detajlov. Naša zaveza je vaša popolna sprostitev in samozavest.</p>
+<div class="pt-8 flex gap-12">
+<div>
+<p class="text-3xl font-serif text-primary" style="">15+</p>
+<p class="text-[10px] tracking-widest uppercase text-secondary" style="">Let izkušenj</p>
+</div>
+<div>
+<p class="text-3xl font-serif text-primary" style="">2.5k</p>
+<p class="text-[10px] tracking-widest uppercase text-secondary" style="">Zadovoljnih strank</p>
+</div>
+</div>
+</div>
+</div>
+</div>
 </section>
-
-<!-- ═══════════════════════════════════════════
-     TESTIMONIALS
-═══════════════════════════════════════════ -->
-<section class="py-32 bg-surface overflow-hidden">
-  <div class="max-w-7xl mx-auto px-6">
-    <div class="text-center mb-20 reveal">
-      <span class="category-tag text-primary font-label text-sm font-bold uppercase mb-4 block">Zaupanje</span>
-      <h2 class="text-4xl md:text-5xl font-headline text-on-surface italic">Zgodbe naših strank</h2>
-    </div>
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-      <div class="testimonial-card bg-surface-container-lowest p-10 reveal">
-        <div class="flex text-primary mb-6">
-          <span class="material-symbols-outlined" style="font-variation-settings:'FILL' 1;">star</span>
-          <span class="material-symbols-outlined" style="font-variation-settings:'FILL' 1;">star</span>
-          <span class="material-symbols-outlined" style="font-variation-settings:'FILL' 1;">star</span>
-          <span class="material-symbols-outlined" style="font-variation-settings:'FILL' 1;">star</span>
-          <span class="material-symbols-outlined" style="font-variation-settings:'FILL' 1;">star</span>
-        </div>
-        <p class="text-lg italic font-serif text-on-surface mb-8 leading-relaxed">"Najboljša nega obraza, kar sem jih kdaj imela. Petra si vzame čas in resnično svetuje glede na tip kože. Moja koža še nikoli ni bila tako sijoča."</p>
-        <div class="flex items-center gap-4">
-          <div class="w-10 h-10 rounded-full bg-primary/20 flex items-center justify-center">
-            <span class="font-label text-sm font-bold text-primary">MK</span>
-          </div>
-          <p class="font-label text-sm uppercase tracking-widest text-primary font-bold">Maja K.</p>
-        </div>
-      </div>
-      <div class="testimonial-card bg-surface-container-lowest p-10 reveal reveal-delay-1">
-        <div class="flex text-primary mb-6">
-          <span class="material-symbols-outlined" style="font-variation-settings:'FILL' 1;">star</span>
-          <span class="material-symbols-outlined" style="font-variation-settings:'FILL' 1;">star</span>
-          <span class="material-symbols-outlined" style="font-variation-settings:'FILL' 1;">star</span>
-          <span class="material-symbols-outlined" style="font-variation-settings:'FILL' 1;">star</span>
-          <span class="material-symbols-outlined" style="font-variation-settings:'FILL' 1;">star</span>
-        </div>
-        <p class="text-lg italic font-serif text-on-surface mb-8 leading-relaxed">"Vzdušje v salonu je tako pomirjujoče, da bi lahko tam ostala ves dan. Masaže so vrhunske in se po njih počutim kot prerojena."</p>
-        <div class="flex items-center gap-4">
-          <div class="w-10 h-10 rounded-full bg-primary/20 flex items-center justify-center">
-            <span class="font-label text-sm font-bold text-primary">TL</span>
-          </div>
-          <p class="font-label text-sm uppercase tracking-widest text-primary font-bold">Tanja L.</p>
-        </div>
-      </div>
-      <div class="testimonial-card bg-surface-container-lowest p-10 reveal reveal-delay-2">
-        <div class="flex text-primary mb-6">
-          <span class="material-symbols-outlined" style="font-variation-settings:'FILL' 1;">star</span>
-          <span class="material-symbols-outlined" style="font-variation-settings:'FILL' 1;">star</span>
-          <span class="material-symbols-outlined" style="font-variation-settings:'FILL' 1;">star</span>
-          <span class="material-symbols-outlined" style="font-variation-settings:'FILL' 1;">star</span>
-          <span class="material-symbols-outlined" style="font-variation-settings:'FILL' 1;">star</span>
-        </div>
-        <p class="text-lg italic font-serif text-on-surface mb-8 leading-relaxed">"Manikura je zdržala cel mesec brez praske! Neverjetna kakovost materialov in natančnost. Toplo priporočam vsem!"</p>
-        <div class="flex items-center gap-4">
-          <div class="w-10 h-10 rounded-full bg-primary/20 flex items-center justify-center">
-            <span class="font-label text-sm font-bold text-primary">AM</span>
-          </div>
-          <p class="font-label text-sm uppercase tracking-widest text-primary font-bold">Anja M.</p>
-        </div>
-      </div>
-    </div>
-  </div>
+<!-- Mnenja (Reviews) -->
+<section class="py-32 bg-surface">
+<div class="max-w-4xl mx-auto px-6 text-center">
+<span class="material-symbols-outlined text-primary-container text-6xl mb-8" style="">format_quote</span>
+<div class="relative">
+<div class="transition-all duration-700">
+<p class="text-2xl md:text-3xl font-serif italic text-on-surface mb-10 leading-relaxed" style="">
+                        "Obisk pri Petri je zame vedno najboljši del tedna. Ambient je čudovit, storitve pa na najvišjem nivoju. Moja koža še nikoli ni bila tako sijoča!"
+                    </p>
+<div class="flex items-center justify-center gap-1 mb-4 text-primary">
+<span class="material-symbols-outlined" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+</div>
+<p class="text-xs tracking-[0.3em] uppercase text-secondary font-medium" style="">Ana M., Celje</p>
+</div>
+<div class="flex justify-center gap-4 mt-12">
+<button class="w-12 h-12 rounded-full border border-outline-variant/30 flex items-center justify-center hover:bg-primary-container transition-colors duration-300" style="">
+<span class="material-symbols-outlined" style="">chevron_left</span>
+</button>
+<button class="w-12 h-12 rounded-full border border-outline-variant/30 flex items-center justify-center hover:bg-primary-container transition-colors duration-300" style="">
+<span class="material-symbols-outlined" style="">chevron_right</span>
+</button>
+</div>
+</div>
+</div>
 </section>
-
-<!-- ═══════════════════════════════════════════
-     KONTAKT
-═══════════════════════════════════════════ -->
-<section class="py-32 bg-surface-container-low" id="kontakt">
-  <div class="max-w-7xl mx-auto px-6">
-    <div class="grid grid-cols-1 lg:grid-cols-2 gap-20">
-      <div class="space-y-12 reveal">
-        <div>
-          <span class="category-tag text-primary font-label text-sm font-bold uppercase mb-4 block">Najdite nas</span>
-          <h2 class="text-4xl md:text-5xl font-headline text-on-surface mb-8">Stopite v stik</h2>
-          <p class="text-on-surface-variant text-lg font-light">Nahajamo se na mirni lokaciji v Celju, kjer vam zagotavljamo zasebnost in udobje.</p>
-        </div>
-        <div class="space-y-8">
-          <div class="flex items-start gap-6">
-            <div class="w-12 h-12 flex items-center justify-center bg-primary/10 rounded-full flex-shrink-0">
-              <span class="material-symbols-outlined text-primary">location_on</span>
-            </div>
-            <div>
-              <h4 class="font-bold text-on-surface uppercase text-xs tracking-widest mb-1">Lokacija</h4>
-              <p class="text-on-surface-variant">Podjavorškova ulica 1, 3000 Celje</p>
-            </div>
-          </div>
-          <div class="flex items-start gap-6">
-            <div class="w-12 h-12 flex items-center justify-center bg-primary/10 rounded-full flex-shrink-0">
-              <span class="material-symbols-outlined text-primary">call</span>
-            </div>
-            <div>
-              <h4 class="font-bold text-on-surface uppercase text-xs tracking-widest mb-1">Telefon</h4>
-              <p class="text-on-surface-variant">+386 (0)41 000 000</p>
-            </div>
-          </div>
-          <div class="flex items-start gap-6">
-            <div class="w-12 h-12 flex items-center justify-center bg-primary/10 rounded-full flex-shrink-0">
-              <span class="material-symbols-outlined text-primary">schedule</span>
-            </div>
-            <div>
-              <h4 class="font-bold text-on-surface uppercase text-xs tracking-widest mb-1">Delovni čas</h4>
-              <p class="text-on-surface-variant">Po dogovoru</p>
-            </div>
-          </div>
-          <!-- WhatsApp contact option -->
-          <div class="flex items-start gap-6">
-            <div class="w-12 h-12 flex items-center justify-center bg-green-100 rounded-full flex-shrink-0">
-              <svg class="w-5 h-5" viewBox="0 0 24 24" fill="#25D366"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-            </div>
-            <div>
-              <h4 class="font-bold text-on-surface uppercase text-xs tracking-widest mb-1">WhatsApp</h4>
-              <a href="https://wa.me/38641000000" class="text-green-700 font-medium hover:underline">Pišite nam na WhatsApp</a>
-            </div>
-          </div>
-          <div class="flex items-start gap-6">
-            <a class="flex items-center gap-2 text-primary hover:text-stone-800 transition-colors uppercase text-xs tracking-widest font-bold" href="https://www.instagram.com/kozmeticnisalon_petra/" target="_blank">
-              <span class="material-symbols-outlined">camera</span>
-              Sledite nam na Instagramu
-            </a>
-          </div>
-        </div>
-
-        <!-- Map placeholder with iframe feel -->
-        <div class="w-full aspect-video grayscale hover:grayscale-0 transition-all duration-700 rounded-sm overflow-hidden border border-outline-variant/30">
-          <img class="w-full h-full object-cover" src="https://picsum.photos/seed/citymap/900/500" alt="Lokacija Celju"/>
-        </div>
-      </div>
-
-      <!-- Contact Form -->
-      <div class="bg-surface-container-lowest p-10 md:p-16 shadow-sm reveal reveal-delay-2" id="contact-form-wrap">
-        <h3 class="text-3xl font-headline text-on-surface mb-10">Povpraševanje</h3>
-        <form class="space-y-8" id="contact-form">
-          <div class="relative">
-            <input class="w-full bg-transparent border-0 border-b border-outline-variant py-4 px-0 text-on-surface placeholder:text-outline transition-colors" placeholder="Ime in priimek" type="text" required/>
-          </div>
-          <div class="relative">
-            <input class="w-full bg-transparent border-0 border-b border-outline-variant py-4 px-0 text-on-surface placeholder:text-outline transition-colors" placeholder="E-poštni naslov" type="email" required/>
-          </div>
-          <div class="relative">
-            <input class="w-full bg-transparent border-0 border-b border-outline-variant py-4 px-0 text-on-surface placeholder:text-outline transition-colors" placeholder="Telefonska številka" type="tel"/>
-          </div>
-          <div class="relative">
-            <select class="w-full bg-transparent border-0 border-b border-outline-variant py-4 px-0 text-on-surface transition-colors">
-              <option value="" class="bg-surface">Izberite storitev</option>
-              <option class="bg-surface">Nega obraza — od 35 €</option>
-              <option class="bg-surface">Manikura — od 20 €</option>
-              <option class="bg-surface">Masaža — od 45 €</option>
-              <option class="bg-surface">Depilacija — od 15 €</option>
-            </select>
-          </div>
-          <div class="relative">
-            <textarea class="w-full bg-transparent border-0 border-b border-outline-variant py-4 px-0 text-on-surface placeholder:text-outline transition-colors" placeholder="Vaše sporočilo" rows="4"></textarea>
-          </div>
-          <button class="w-full bg-primary text-on-primary py-5 rounded-sm font-label uppercase tracking-widest text-sm hover:bg-stone-800 transition-all duration-300" type="submit" id="submit-btn">
-            Pošlji sporočilo
-          </button>
-        </form>
-        <!-- Success state -->
-        <div class="form-success text-center py-16" id="form-success">
-          <div class="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-6">
-            <span class="material-symbols-outlined text-primary text-3xl" style="font-variation-settings:'FILL' 1;">check_circle</span>
-          </div>
-          <h4 class="text-2xl font-headline text-on-surface mb-4">Sporočilo poslano!</h4>
-          <p class="text-on-surface-variant">Javili se vam bomo v najkrajšem možnem času.</p>
-        </div>
-      </div>
-    </div>
-  </div>
+<!-- Kontakt & Lokacija -->
+<section class="py-32 bg-white" id="kontakt">
+<div class="max-w-screen-2xl mx-auto px-6 md:px-12">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-20">
+<div class="space-y-12">
+<div>
+<h2 class="text-4xl md:text-6xl text-on-surface mb-8" style="">Ostanimo v <span class="italic" style="">stiku.</span></h2>
+<p class="text-secondary max-w-md" style="">Pišite nam za termin ali pa nas preprosto obiščite v našem mirnem kotičku v Celju.</p>
+</div>
+<div class="space-y-6">
+<div class="flex items-start gap-6">
+<span class="material-symbols-outlined text-primary" style="">location_on</span>
+<div>
+<p class="text-xs tracking-widest uppercase text-secondary mb-1" style="">Lokacija</p>
+<p class="text-on-surface" style="">Podjavorškova ulica 1, 3000 Celje</p>
+</div>
+</div>
+<div class="flex items-start gap-6">
+<span class="material-symbols-outlined text-primary" style="">call</span>
+<div>
+<p class="text-xs tracking-widest uppercase text-secondary mb-1" style="">Telefon</p>
+<p class="text-on-surface" style="">+386 41 000 000</p>
+</div>
+</div>
+<div class="flex items-start gap-6">
+<span class="material-symbols-outlined text-primary" style="">mail</span>
+<div>
+<p class="text-xs tracking-widest uppercase text-secondary mb-1" style="">E-pošta</p>
+<p class="text-on-surface" style="">info@salonpetra.si</p>
+</div>
+</div>
+</div>
+<div class="h-[300px] w-full bg-surface-container overflow-hidden">
+<img alt="Map placeholder" class="w-full h-full object-cover grayscale opacity-50" data-alt="Minimalist map graphic of Celje city center with a clean, neutral color palette" data-location="Celje" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBzNbhabbeAfCPJk3HNLg_k0fKu9LKUAxsty2RTgTpBzgViDXajC6nuYzjy-G15soZCUBCXK7TarUYaQy5VBjQxdMNaAHwhk1aNZDGrOcmi_9maSOAEnLgS9L27u5rTG3EWX1_9qQBOtzXrLeOcGDu7z__ep8Hj3idV9rsSLVnZZFmjV7wtmoggjvcHKLWdRQP7lcxTs7ENdOACMIVt4MDxZdUI6CKirzgLT3GfxbG1sO1-m4UkcvzYWZa_3BiAbl6b-y5dZMldh0OU" style="">
+</div>
+</div>
+<div class="bg-surface p-12 lg:p-20 editorial-shadow">
+<form class="space-y-10">
+<div class="relative">
+<input class="w-full bg-transparent border-0 border-b border-outline-variant py-4 focus:ring-0 focus:border-primary transition-colors peer placeholder-transparent" id="name" placeholder="Ime in priimek" type="text">
+<label class="absolute left-0 -top-3.5 text-secondary text-[10px] tracking-widest uppercase transition-all peer-placeholder-shown:text-sm peer-placeholder-shown:top-4 peer-focus:-top-3.5 peer-focus:text-[10px] peer-focus:text-primary" for="name" style="">Ime in priimek</label>
+</div>
+<div class="relative">
+<input class="w-full bg-transparent border-0 border-b border-outline-variant py-4 focus:ring-0 focus:border-primary transition-colors peer placeholder-transparent" id="email" placeholder="E-naslov" type="email">
+<label class="absolute left-0 -top-3.5 text-secondary text-[10px] tracking-widest uppercase transition-all peer-placeholder-shown:text-sm peer-placeholder-shown:top-4 peer-focus:-top-3.5 peer-focus:text-[10px] peer-focus:text-primary" for="email" style="">E-naslov</label>
+</div>
+<div class="relative">
+<textarea class="w-full bg-transparent border-0 border-b border-outline-variant py-4 focus:ring-0 focus:border-primary transition-colors peer placeholder-transparent" id="message" placeholder="Sporočilo" rows="4"></textarea>
+<label class="absolute left-0 -top-3.5 text-secondary text-[10px] tracking-widest uppercase transition-all peer-placeholder-shown:text-sm peer-placeholder-shown:top-4 peer-focus:-top-3.5 peer-focus:text-[10px] peer-focus:text-primary" for="message" style="">Sporočilo</label>
+</div>
+<button class="w-full bg-primary text-on-primary py-5 tracking-[0.3em] uppercase text-xs font-semibold hover:bg-on-primary-container transition-all duration-500" type="submit" style="">
+                            Pošlji povpraševanje
+                        </button>
+</form>
+</div>
+</div>
+</div>
 </section>
-</main>
-
-<!-- ═══════════════════════════════════════════
-     FLOATING BUTTONS
-═══════════════════════════════════════════ -->
-<!-- WhatsApp -->
-<a href="https://wa.me/38641000000" target="_blank"
-   class="whatsapp-btn fixed bottom-8 right-8 z-40 w-16 h-16 rounded-full flex items-center justify-center shadow-xl"
-   title="Pišite nam na WhatsApp">
-  <svg width="28" height="28" viewBox="0 0 24 24" fill="white">
-    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
-  </svg>
-</a>
-
-<!-- Reservation CTA (desktop only, shown when past hero) -->
-<a href="#kontakt" id="reservation-fab"
-   class="glass-nav bg-surface-container-lowest/90 px-8 py-4 fixed bottom-28 right-8 z-40 hidden md:flex items-center gap-4 shadow-2xl border border-primary/10 rounded-sm opacity-0 pointer-events-none transition-all duration-500"
-   style="transform: translateY(10px);">
-  <span class="material-symbols-outlined text-primary animate-pulse" style="font-variation-settings:'FILL' 1;">calendar_today</span>
-  <span class="font-label text-xs uppercase tracking-widest font-bold text-on-surface">Rezervirajte termin</span>
-</a>
-
 <!-- Footer -->
-<footer class="bg-stone-100 w-full py-12 px-6">
-  <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
-    <div class="font-serif text-lg text-stone-900 uppercase font-bold tracking-tighter">Salon Petra</div>
-    <div class="flex flex-col items-center gap-4">
-      <div class="flex gap-8">
-        <button class="font-sans text-xs tracking-widest uppercase text-stone-500 hover:text-stone-900 hover:underline underline-offset-8 transition-all">Impresum</button>
-        <button class="font-sans text-xs tracking-widest uppercase text-stone-500 hover:text-stone-900 hover:underline underline-offset-8 transition-all">Politika zasebnosti</button>
-      </div>
-      <p class="font-sans text-[10px] tracking-widest uppercase text-stone-400">© 2026 Salon Petra. Vse pravice pridržane.</p>
-    </div>
-    <div class="flex gap-4">
-      <a class="w-10 h-10 flex items-center justify-center bg-stone-200 rounded-full text-stone-600 hover:bg-primary hover:text-white transition-all" href="https://www.instagram.com/kozmeticnisalon_petra/">
-        <span class="material-symbols-outlined text-sm">photo_camera</span>
-      </a>
-      <a href="https://wa.me/38641000000" class="w-10 h-10 flex items-center justify-center bg-green-100 rounded-full text-green-700 hover:bg-green-500 hover:text-white transition-all">
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-      </a>
-    </div>
-  </div>
-  <div class="max-w-7xl mx-auto mt-12 grid grid-cols-1 md:grid-cols-2 gap-8 opacity-40 hover:opacity-100 transition-opacity">
-    <details class="group border-t border-stone-200 pt-4">
-      <summary class="list-none cursor-pointer flex justify-between items-center font-label text-[10px] uppercase tracking-widest">
-        Impresum
-        <span class="material-symbols-outlined text-xs group-open:rotate-180 transition-transform">expand_more</span>
-      </summary>
-      <div class="py-4 text-[10px] text-stone-500 leading-relaxed uppercase tracking-wider">
-        Petra Železnik s.p.<br/>
-        Podjavorškova ulica 1, 3000 Celje<br/>
-        E-pošta: <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="fbce899ad5889a979495bb9c969a9297d5989496">[email&#160;protected]</a>
-      </div>
-    </details>
-    <details class="group border-t border-stone-200 pt-4">
-      <summary class="list-none cursor-pointer flex justify-between items-center font-label text-[10px] uppercase tracking-widest">
-        Politika zasebnosti
-        <span class="material-symbols-outlined text-xs group-open:rotate-180 transition-transform">expand_more</span>
-      </summary>
-      <div class="py-4 text-[10px] text-stone-500 leading-relaxed uppercase tracking-wider">
-        V Salonu Petra vašo zasebnost obravnavamo z najvišjo stopnjo skrbnosti. Vaše osebne podatke zbiramo in obdelujemo izključno za namene rezervacije terminov. Zavezujemo se, da vaših podatkov ne bomo posredovali tretjim osebam brez vaše izrecne privolitve (GDPR).
-      </div>
-    </details>
-  </div>
+<footer class="w-full border-t border-stone-200/50 dark:border-stone-800/50 bg-stone-100 dark:bg-stone-950">
+<div class="flex flex-col items-center gap-12 py-20 px-8 w-full max-w-screen-2xl mx-auto">
+<div class="font-serif italic text-xl tracking-widest text-stone-900 dark:text-stone-50" style="">Salon Petra</div>
+<div class="flex flex-wrap justify-center gap-10">
+<a class="text-stone-500 hover:text-amber-700 transition-all duration-500 font-sans text-[10px] tracking-[0.2em] uppercase opacity-80 hover:opacity-100" href="#" style="">Instagram</a>
+<a class="text-stone-500 hover:text-amber-700 transition-all duration-500 font-sans text-[10px] tracking-[0.2em] uppercase opacity-80 hover:opacity-100" href="#" style="">Impresum</a>
+<a class="text-stone-500 hover:text-amber-700 transition-all duration-500 font-sans text-[10px] tracking-[0.2em] uppercase opacity-80 hover:opacity-100" href="#" style="">Politika zasebnosti</a>
+</div>
+<div class="text-center space-y-4">
+<p class="font-sans text-[10px] tracking-[0.2em] uppercase text-stone-500" style="">© 2026<div>&nbsp;Salon Petra. Vse pravice pridržane.</div></p>
+<div class="flex justify-center gap-4 text-primary opacity-60">
+<span class="material-symbols-outlined text-sm" style="">spa</span>
+<span class="material-symbols-outlined text-sm" style="">fluid</span>
+<span class="material-symbols-outlined text-sm" style="">self_care</span>
+</div>
+</div>
+</div>
 </footer>
-
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
-// ── Parallax ──────────────────────────────────────────
-const parallaxEl = document.getElementById('parallax-hero');
-function onScroll() {
-  const scrollY = window.scrollY;
-  if (parallaxEl) {
-    parallaxEl.style.transform = `translateY(${scrollY * 0.4}px)`;
-  }
-  // Nav shadow
-  const nav = document.getElementById('main-nav');
-  if (scrollY > 20) nav.classList.add('scrolled');
-  else nav.classList.remove('scrolled');
-  // Reservation FAB
-  const fab = document.getElementById('reservation-fab');
-  if (scrollY > window.innerHeight * 0.8) {
-    fab.style.opacity = '1';
-    fab.style.transform = 'translateY(0)';
-    fab.classList.remove('pointer-events-none');
-  } else {
-    fab.style.opacity = '0';
-    fab.style.transform = 'translateY(10px)';
-    fab.classList.add('pointer-events-none');
-  }
-}
-window.addEventListener('scroll', onScroll, { passive: true });
-
-// ── Scroll reveal ─────────────────────────────────────
-document.body.classList.add('js-loaded');
-const revealEls = document.querySelectorAll('.reveal');
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add('visible');
-      observer.unobserve(entry.target);
-    }
-  });
-}, { threshold: 0.05, rootMargin: '0px 0px 0px 0px' });
-revealEls.forEach(el => observer.observe(el));
-
-// ── Counter animation ─────────────────────────────────
-function animateCounter(el, target, suffix, duration) {
-  let start = 0;
-  const step = target / (duration / 16);
-  const timer = setInterval(() => {
-    start += step;
-    if (start >= target) {
-      start = target;
-      clearInterval(timer);
-    }
-    el.textContent = Math.round(start) + suffix;
-  }, 16);
-}
-
-const statsSection = document.getElementById('stats');
-let countersStarted = false;
-const statsObserver = new IntersectionObserver((entries) => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting && !countersStarted) {
-      countersStarted = true;
-      document.querySelectorAll('.counter-num').forEach(el => {
-        const target = parseInt(el.dataset.target);
-        const suffix = el.dataset.suffix || '';
-        animateCounter(el, target, suffix, 1800);
-      });
-    }
-  });
-}, { threshold: 0.5 });
-if (statsSection) statsObserver.observe(statsSection);
-
-// ── Mobile menu ───────────────────────────────────────
-document.getElementById('mobile-toggle').addEventListener('click', () => {
-  const menu = document.getElementById('mobile-menu');
-  menu.classList.toggle('hidden');
-});
-
-// ── Form submit (demo state) ──────────────────────────
-document.getElementById('contact-form').addEventListener('submit', (e) => {
-  e.preventDefault();
-  const btn = document.getElementById('submit-btn');
-  btn.textContent = 'Pošilja
+<!-- FAB for Booking (Contextual) -->
+<a class="fixed bottom-8 right-8 bg-primary text-on-primary w-14 h-14 rounded-full flex items-center justify-center editorial-shadow z-40 hover:scale-110 transition-transform duration-300 md:hidden" href="#kontakt" style="">
+<span class="material-symbols-outlined" style="">calendar_month</span>
+</a>
+</body></html>
